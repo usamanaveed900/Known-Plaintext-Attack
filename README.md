@@ -2,10 +2,13 @@
 --> Known-plaintext attack tool for XOR-encrypted data
 
 Let's say we XOR-encrypt a text file using this "secure" password/key: @v3RyS3cREtK3y!
+
 We should not forget that:
 
 --> plaintext ⊕ key = encrypted_text
+
 --> encrypted_text ⊕ plaintext = key
+
 --> encrypted_text ⊕ key = plaintext
 
 If the key is smaller than the plaintext, the key is repeated. This fact makes this encryption scheme extremely weak.
@@ -25,11 +28,11 @@ These instructions will get you a copy of the project up and running on your loc
 ## Running Method
 --> Open Powershell
 
---> type python KPA.py <encrypted filename> --key=<encryption key>
-  
-                          OR
+--> type python KPA.py (encrypted file) --key=encryption key 
 
---> KPA.py <encrypted file> <known plaintext> [max_key_length]
+                      OR   
+
+--> KPA.py (encrypted file) (known plaintext) [max_key_length]
 
 
 ## Authors
