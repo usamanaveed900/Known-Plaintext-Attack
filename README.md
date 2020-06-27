@@ -1,4 +1,5 @@
-# Known-Plaintext-Attack
+# Known-Plaintext-
+
 --> Known-plaintext attack tool for XOR-encrypted data
 
 Let's say we XOR-encrypt a text file using this "secure" password/key: @v3RyS3cREtK3y!
@@ -26,14 +27,12 @@ These instructions will get you a copy of the project up and running on your loc
 --> os-sys 2.1.4 (pip install os-sys)
 
 ## Running Method
+
 --> Open Powershell
 
 --> type python KPA.py (encrypted file) --key=encryption key 
 
-                      OR   
-
 --> KPA.py (encrypted file) (known plaintext) [max_key_length]
-
 
 ## Authors
 
