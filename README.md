@@ -1,24 +1,14 @@
 # Known-Plaintext-Attack
-Known-plaintext attack tool for XOR-encrypted data
+--> Known-plaintext attack tool for XOR-encrypted data
 
-In the modern world, depression has become a major problem for the society and it is increasing
-day by day. Depression is resulting in a lot of deaths and has become a hurdle for people who
-wants a normal happy life. People usually share their feelings and emotions through the social
-media platform. We have developed a desktop application that can help the educational
-institutions or corporations to identify the presence of probable depression level by analyzing
-their tweets or extracting the emotions from the facial expressions of the students or employees
-respectively. We have assigned different percentages to the different probable depression levels.
-The tweets of the user are classified into positive and negative tweets based on the different
-metrics. The admin of the system can scrape the tweets from the twitter account of the user and
-apply sentimental analysis for the prediction of the probable depression level. The admin can
-also predict the probable depression level from the facial expressions of the user and compare the
-results with each other. The manager can record the live stream of the user and can generate
-monthly or yearly reports of the people to statistically analyze the results. We have compared the
-results generated from the CNN model with the logistic regression model. This can help the
-organizations to predict the probable depression level beforehand and take necessary precautions
-so that the person develops a better personality. This project is very beneficial for the society
-because now a days most of the people are depressed due to various reasons and their post on
-social media directly effects the society.
+Let's say we XOR-encrypt a text file using this "secure" password/key: @v3RyS3cREtK3y!
+We should not forget that:
+
+--> plaintext ⊕ key = encrypted_text
+--> encrypted_text ⊕ plaintext = key
+--> encrypted_text ⊕ key = plaintext
+
+If the key is smaller than the plaintext, the key is repeated. This fact makes this encryption scheme extremely weak.
 
 ## Getting Started
 
@@ -26,22 +16,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
---> Python 3.7.4 (64 bit)  (Download Python from www.python.org)
+--> Python 3.5 or above  (Download Python from www.python.org)
 
--->MySql WorkBench (Download WorkBench from www.mysql.com › products › workbench)
+--> strings 0.1.2 (pip install strings)
 
-### Installing
+--> os-sys 2.1.4 (pip install os-sys)
 
+## Running Method
+--> Open Powershell
 
+--> type python KPA.py <encrypted filename> --key=<encryption key>
+  
+                          OR
 
-## Running the tests
-
-
-
-### Break down into end to end tests
-
-
-### And coding style tests
+--> KPA.py <encrypted file> <known plaintext> [max_key_length]
 
 
 ## Authors
